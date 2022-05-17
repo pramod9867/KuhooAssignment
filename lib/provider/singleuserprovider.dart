@@ -14,7 +14,7 @@ class SingleUserProvider extends ChangeNotifier {
   getSingleUser(context, {int id = 0}) async {
     try {
       networkStatus = NetworkStatus.loading;
-      notifyListeners();
+      // notifyListeners();
 
       userModel = await networkRepository.getSingleUser(id: id);
 

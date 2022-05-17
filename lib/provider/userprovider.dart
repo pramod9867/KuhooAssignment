@@ -19,7 +19,7 @@ class UserProvider extends ChangeNotifier {
         notifyListeners();
       } else {
         networkStatus = NetworkStatus.loading;
-        notifyListeners();
+        // notifyListeners();
       }
       userModel = await networkRepository.getUserList(index: index);
       data.addAll(userModel.data ?? []);
